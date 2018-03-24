@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/carpooling', 'CarpoolingController@index');
 Route::get('/carpooling/create', 'CarpoolingController@create')->name('carpoolingCreate');
+Route::get('/test','TestController@index');
+Route::get('/test/form','TestController@form');
+Route::post('/test/post','TestController@post')->name('postTest');
